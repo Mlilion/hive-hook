@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<c3p0-config>
+    <named-config name="mysql">
+        <property name="user">root</property>
+        <property name="password">root</property>
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://192.168.2.101:3306/test</property>
+        <property name="initialPoolSize">20</property>
+        <property name="maxPoolSize">50</property>
+        <property name="minPoolSize">2</property>
+    </named-config>
+
+    <named-config name="hive_meta">
+        <property name="user">root</property>
+        <property name="password">root</property>
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://192.168.2.101:3306/hive</property>
+        <property name="initialPoolSize">20</property>
+        <property name="maxPoolSize">50</property>
+        <property name="minPoolSize">2</property>
+    </named-config>
+
+    <named-config name="hive">
+        <property name="user">root</property>
+        <property name="password">root</property>
+        <property name="driverClass">org.apache.hive.jdbc.HiveDriver</property>
+        <property name="jdbcUrl">jdbc:hive2://192.168.2.101:10000/ods</property>
+        <property name="initialPoolSize">20</property>
+        <property name="maxPoolSize">50</property>
+        <property name="minPoolSize">2</property>
+    </named-config>
+
+</c3p0-config>
